@@ -8,4 +8,4 @@ by [Michael Hartl] (http://www.michaelhartl.com)
 
 #Content
 
-- 
+- Setup Static Pages
