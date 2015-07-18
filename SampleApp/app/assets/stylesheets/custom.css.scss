@@ -93,35 +93,35 @@ footer
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
-}
 
-/* style for <a..> */
-footer a
-{
-  color: #044;
-}
 
-/* style for <a..> hover event */
-footer a:hover
-{
-  color: #0aa;
-}
+  /* style for <a..> */
+  a
+  {
+    color: #044;
 
-footer small
-{
-  float: left;
-}
+    /* style for <a..> hover event */
+    &:hover
+    {
+      color: #0aa;
+    }
+  }
 
-footer ul
-{
-  float: right;
-  margin-top: 5px;
-  list-style: none;
-}
+  small
+  {
+    float: left;
+  }
 
-footer ul li
-{
-  float: left;
+  ul
+  {
+    float: right;
+    margin-top: 5px;
+    list-style: none;
   
-  margin-left: 15px;
+    li
+    {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
