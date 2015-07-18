@@ -75,16 +75,20 @@ p
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
 
-.logo:hover
-{
-  color: #ff0;
-  text-decoration: none;
+
+  &:hover
+  {
+    color: #ff0;
+    text-decoration: none;
+  }
 }
 
 
 /* ========== Footer-Style =========== */
+
+$green-dark: #040;
+$green-light: #0b0;
 
 /* general style */
 footer
@@ -98,12 +102,12 @@ footer
   /* style for <a..> */
   a
   {
-    color: #044;
+    color: $green-dark;
 
     /* style for <a..> hover event */
     &:hover
     {
-      color: #0aa;
+      color: $green-light;
     }
   }
 
