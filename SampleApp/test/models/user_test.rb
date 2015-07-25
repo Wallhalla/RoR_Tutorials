@@ -3,7 +3,8 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   
   def setup
-    @valid_user = User.new(name: "TestUser", email: "TestUser@example.com")
+    @valid_user = User.new(name: "TestUser", email: "TestUser@example.com",
+                           password: "foobar", password_confirmation: "foobar")
   end
   
   test "should be valid" do
@@ -76,5 +77,9 @@ class UserTest < ActiveSupport::TestCase
     assert_not duplicated_user.valid?
   end
 
+  test "password should have minimum length" do
+    @valid_user.password = @valid_user.password_confirmation = "a" * 5
+    assert_not @valid_user.valid?
+  end
   
 end
